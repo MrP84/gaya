@@ -2,25 +2,119 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+}
+ /* tous les éléments de même type */
+h2 {
+  font-size: 1.2em;
 }
 
-.essai {
-	height: 200px;
-	width: 100%;
-	background-color: red;
+p {
+  margin: auto;
+}
+
+/* footer */
+
+.footer {
+  min-width: 100%;
+}
+
+.footerInfo {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+p.coordonnees {
+  color: #4c3025;
+  text-shadow: #eae8e5 0.5px 0.5px, #eae8e5 -0.5px 0.5px, #eae8e5 0.5px -0.5px, #eae8e5 -0.5px -0.5px;
+  font-size: 1.4em;
+}
+
+.infoMail {
+  width: 100%;
+  font-size: 0.8em;
+  margin-top: -1rem;
+}
+
+a.email {
+  margin: 0 auto;
+}
+
+.part2 {
+  margin-top: 0;
+}
+
+.infoContact {
+  font-size: 1rem;
+  color: #4d3126;
+  margin: 20px auto;
+}
+
+.legal {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  border-top: 1px solid #FFF;
+}
+
+.desktop {
+  display: none;
+}
+
+ /* Mise en forme des éléments dans les parallax */
+.text {
+  display:none;
+}
+
+table {
+  word-wrap: normal;
+}
+
+td:nth-child(2) {
+  text-align: center;
+  width: auto;
+}
+
+td {
+  border-bottom: 1px solid #FFF;
+}
+
+.lastRange {
+  text-align: right;
+  min-width: 100px;
+}
+
+.slide4 {
+  min-width: 95%;
+  margin: 0 1%;
+}
+
+.gras {
+  font-weight: bold;
+}
+
+.souligne {
+  text-decoration: underline;
 }
 
 /* Menu et barre de navigation */
+
+.overlayImg {
+  display: none;
+}
+
+.logoSmallSize {
+  position: absolute;
+  top: 1%;
+  right: 5px;
+}
 
 #mobile {
   height: 100%;
   background: rgba(203,183,77,0.8);
   position: relative;
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-  -khtml-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
@@ -33,15 +127,13 @@ body, html {
   overflow: hidden;
   visibility: visible;
   -webkit-transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  -khtml-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
 
 #header {
   height: 60px;
-  background: #eae8e5;
+  background: #ae9c69;
 }
 
 #image {
@@ -51,7 +143,8 @@ body, html {
   position: relative;
 }
 #image img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -66,22 +159,21 @@ body, html {
   text-align: center;
   position: relative;
   top: -35%;
-  color: #ae9c69;
+  color: #4c3025;
 }
 
 #burgerBtn {
-  border-top: 2px solid #ae9c69;
+  border-top: 2px solid #eae8e5;
   height: 25px;
   width: 30px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: absolute;
   z-index: 30;
   left: 20px;
   top: 15px;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  -khtml-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
@@ -92,11 +184,9 @@ body, html {
   height: 2px;
   width: 30px;
   left: 0;
-  background: #ae9c69;
+  background: #eae8e5;
   top: 10px;
   -webkit-transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  -khtml-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
@@ -107,11 +197,9 @@ body, html {
   height: 2px;
   width: 30px;
   left: 0;
-  background: #ae9c69;
+  background: #eae8e5;
   bottom: 0;
   -webkit-transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  -khtml-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
@@ -131,16 +219,14 @@ body, html {
   background: #ae9c69;
   text-align: center;
   -webkit-transition: all 0.6s ease-in;
-  -moz-transition: all 0.6s ease-in;
-  -khtml-transition: all 0.6s ease-in;
   -o-transition: all 0.6s ease-in;
   transition: all 0.6s ease-in;
 }
 
 #nav li a {
-	text-decoration: none;
-	color: #FFF;
-	font-size: 1.4em;
+  text-decoration: none;
+  color: #eae8e5;
+  font-size: 1.4em;
 }
 
 #nav li + li {
@@ -154,7 +240,7 @@ body, html {
 }
 
 .navigation #nav li {
-  width: 200px;
+  width: auto;
   margin-left: 0;
 }
 .navigation #burgerBtn {
@@ -162,19 +248,17 @@ body, html {
 }
 .navigation #burgerBtn:before {
   -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
   -khtml-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
   width: 33px;
   left: -2px;
 }
 .navigation #burgerBtn:after {
   -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
   -khtml-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
-  transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+      transform: rotate(135deg);
   bottom: 11px;
   width: 33px;
   left: -2px;
@@ -182,92 +266,202 @@ body, html {
 
 .demo1.navigation #mobileBodyContent {
   -webkit-transform: scale(0.85);
-  -moz-transform: scale(0.85);
   -khtml-transform: scale(0.85);
-  -o-transform: scale(0.85);
-  transform: scale(0.85);
+  -ms-transform: scale(0.85);
+      transform: scale(0.85);
   margin-left: 260px;
 }
 
+
 /* Effet Parallax */
 
-.wrapper {
-  /* The height needs to be set to a fixed value for the effect to work.
-   * 100vh is the full height of the viewport. */
-  height: 100vh;
-  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
-  overflow-x: hidden;
-  /* Enable scrolling on the page. */
-  overflow-y: auto;
-  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
-  perspective: 2px;
-}
-
-.section {
-  /* Needed for children to be absolutely positioned relative to the parent. */
-  position: relative;
-  top: 0;
-  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 100vh;
-  font-family: 'PT Sans Narrow', sans-serif;
-
-
-  /* For text formatting. */
+.container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-shadow: 0 0 5px #000;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  width: 100%;
+  padding: 0;
+}
+.container-fluid section {
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+}
+
+#banner {
+  background-image: url('../../img/15.jpg');
+  background-position: center 50%;
+}
+.container-fluid section:nth-child(1) .image {
+  background-image: url('../../img/10.jpg');
+  background-position: 20% !important;
+}
+.container-fluid section:nth-child(2) .image {
+  background-image: url('../../img/11.jpg');
+}
+.container-fluid section:nth-child(3) .image {
+  background-image: url('../../img/12.jpg');
+}
+.container-fluid section:nth-child(4) .image {
+  background-image: url('../../img/16.png');
+  opacity: 0.6;
+}
+.container-fluid section:nth-child(5) .image {
+  background-image: url('../../img/8.jpg');
+}
+.container-fluid section:nth-child(6) .image {
+  background-image: url(https://images.unsplash.com/photo-1463123081488-789f998ac9c4?iq=100&fm=jpg&w=1000);
+}
+.container-fluid section .image {
   background-attachment: fixed;
-	background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
-}
-
-.parallax::after {
-  /* Display and position the pseudo-element */
-  content: " ";
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  /* Move the pseudo-element back away from the camera,
-   * then scale it back up to fill the viewport.
-   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-  transform: translateZ(-1px) scale(1.5);
-  /* Force the background image to fill the whole element. */
-  background-size: 100%;
-  /* Keep the image from overlapping sibling elements. */
-  z-index: -1;
+  z-index: 500;
+  opacity: 0.8;
 }
 
-/* The styling for the static div. */
-.static {
-  background: #ae9c69;
-  height: 50vh;
+/*Spécial titre */
+#topPage {
+  color: #4c3025;
+  text-shadow: #eae8e5 1px 1px, #eae8e5 -1px 1px, #eae8e5 1px -1px, #eae8e5 -1px -1px;
+  font-size: 1.7em;
 }
 
-/* Sets the actual background images to adorable kitties. This part is crucial. */
-.bg1::after {
-  background-image: url('../../img/image_Spa_3.jpg');
+.container-fluid section .stuff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+  max-width: 70%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  z-index: 1000;
+  color: #eae8e5;
+  text-shadow: #4c3025 1px 1px, #4c3025 -1px 1px, #4c3025 1px -1px, #4c3025 -1px -1px;
+  margin: 0 auto;
+  position: relative;
+}
+.container-fluid section .stuff h2 {
+  margin-bottom: 30px;
+}
+.container-fluid section .stuff:before, .container-fluid section .stuff:after {
+  width: 100%;
+  height: 1px;
+  display: block;
+  background-color: #4c3025;
+  content: "";
+  margin: 30px 0;
 }
 
-.bg2::after {
-  background-image: url('../../img/3.jpg');
+/* Slider de comparaison */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.bg3::after {
-  background-image: url('../../img/4.jpeg');
+.img-comp-container {
+  position: relative;
+  height: 200px;
+  width: 300px;
 }
 
-.bg4::after {
-  background-image: url('../../img/image_Spa_2.jpg');
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  z-index: 40000;
 }
 
-.bg5::after {
-  background-image: url('../../img/6.jpg');
+.img-comp-img img {
+  display: block;
+  /*vertical-align: middle;*/
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 40001;
+  cursor: ew-resize;
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+
+.img-comp-slider::after {
+  content: "⇔";
+  color: #FFF;
+}
+
+.img-comp-container {
+
+}
+
+.slide {
+  margin: 0 auto;
+}
+
+/* Flèche pour remonter */
+
+.goBack {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  color: #f1c40f;
+  z-index: 5000;
+  height: 50px;
+  width: 50px;
+  background-color: orange;
+  border-radius: 10%;
+  text-align: center;
+}
+
+.goBack:visited {
+  color: #f1c40f;
+}
+
+a, a:hover, a:focus, .address {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 1.5em;
 }
 
 @media screen and (min-width: 1000px) {
@@ -280,6 +474,8 @@ body, html {
 		padding:0;
 		margin: 0;
 		overflow: visible;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 		position: relative;
 		top:0;
@@ -289,8 +485,9 @@ body, html {
 	#nav li {
 		width: 100%;
 		margin: 0;
-		flex-basis: 20%;
-		background-color: #eae8e5;
+		-ms-flex-preferred-size: 20%;
+		    flex-basis: 20%;
+		background-color: #ae9c69;
 	}
 
 	#nav li + li {
@@ -306,8 +503,117 @@ body, html {
 	}
 
 	#nav li a {
-	color: #ae9c69;
+	color: #eae8e5;
 	}
+
+  #nav li a:hover {
+    background-color: #4c3025;
+  }
+
+  .text {
+    display: block;
+    padding: 1em 0;
+  }
+
+  .container-fluid section .stuff {
+    font-size: 1.2em;
+    line-height: 1.3;
+    min-width: 0;
+
+  }
+
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  #banner {
+    background-image: url('../../img/14.jpg');
+    background-position: center 50%;
+  }
+
+  .container-fluid section:nth-child(4) .image {
+    background-image: url('../../img/13.png');
+  }
+
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  a.email {
+    margin: auto;
+  }
+
+  .infoContact {
+    margin: auto 1%;
+  }
+
+  p.legal {
+    margin: 1%;
+  }
+
+  .img-comp-container {
+    width: 300px;
+  }
+
+  .slide {
+    margin: 0 auto;
+  }
+
+  .slide2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  table {
+    word-wrap: normal;
+  }
+
+  td {
+    text-align: left;
+    width: auto;
+  }
+
+  table td:nth-child(1) {
+    min-width: 250px;
+  }
+
+  .lastRange {
+    text-align: right;
+    min-width: 100px;
+  }
+
+  .overlayImg {
+    display: block;
+  }
+
+  .logoSmallSize {
+    display: none;
+  }
+
+  .slide4 {
+    max-width: 70%;
+  }
+
+  .footerInfo {
+    display: flex;
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .part2 {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+    margin-top: 0.9rem;
+  }
+
+
+
 
 
 }
